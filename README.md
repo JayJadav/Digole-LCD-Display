@@ -2,7 +2,8 @@
 Implementing a Digole LCD Display with a Raspberry Pi
 
 ## October 2nd - Proof of purchase
-
+### Raspberry Pi 3B+
+![Raspberry Pi POP](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/RaspberryPi%20-%20PoP.PNG)
 
 ## September 25th - Budget
 The budget can be viewed [here](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/Budget.xlsx).

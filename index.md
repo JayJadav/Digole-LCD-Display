@@ -1,8 +1,8 @@
 # Digole-LCD-Display
-Implementing a Digole LCD Display with a Raspberry Pi
+###Implementing a Digole LCD Display with a Raspberry Pi
 
 ## October 16th - System UML Diagram
-The system UML diagram can be viewed [here][System UML Diagram](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/System%20UML%20Diagram.pdf)
+The system UML diagram can be viewed [here](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/System%20UML%20Diagram.pdf)
 
 ## October 9th - Holiday
 

@@ -3,7 +3,11 @@
 
 ## October 23r - Breadboarding
 #### Below is a picture of the breadboard circuit set up with my screen powered on. 
-#### Connection: Pin01(3.3V) = VCC, Pin03(BCM 2 Data) = DATA, Pin05(BCM 3 Clock) = CLK, Pin06(Ground) = GND
+#### Connection: 
+- Pin01(3.3V) = VCC 
+- Pin03(BCM 2 Data) = DATA
+- Pin05(BCM 3 Clock) = CLK 
+- Pin06(Ground) = GND
 
 ![Breadboarding](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/breadboard.jpg)
 

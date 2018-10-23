@@ -2,12 +2,12 @@
 ### Implementing a Digole LCD Display with a Raspberry Pi
 
 ## October 23r - Breadboarding
-###Below is a picture of the breadboard circuit set up with my screen powered on. 
-###Connection: Pin01(3.3V) = VCC, Pin03(BCM 2 Data) = DATA, Pin05(BCM 3 Clock) = CLK, Pin06(Ground) = GND
+### Below is a picture of the breadboard circuit set up with my screen powered on. 
+### Connection: Pin01(3.3V) = VCC, Pin03(BCM 2 Data) = DATA, Pin05(BCM 3 Clock) = CLK, Pin06(Ground) = GND
 
 ![Breadboarding](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/breadboard.jpg)
 
-###Below shows that my Raspberry Pi does indeed see my Digole Display on my correct address of 0x27
+### Below shows that my Raspberry Pi does indeed see my Digole Display on my correct address of 0x27
 
 ![I2cdetect](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/i2cdetect.jpg)
 

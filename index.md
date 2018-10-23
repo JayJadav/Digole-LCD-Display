@@ -19,7 +19,11 @@ Initially I ran in to an issue of connecting to the wrong ground and power pins 
 
 To assemble this circuit I used:  
 [Digole Documentation](https://www.digole.com/images/file/Tech_Data/Digole_Serial_Display_Adapter-Manual.pdf)  
-[Pinout Diagram](https://pinout.xyz/pinout/i2c)
+[Pinout Diagram](https://pinout.xyz/pinout/i2c)  
+
+Schedule Update: I am on schedule as it is laid out [here](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/Capstone%20Gantt%20Schedule.mpp). Breadboarding was to be done by the 23rd, and it has been completed on time. 
+
+Budget Update: The budget has not been changed as of this date. Solder has been borrowed from the Prototype Lab and the acrylic casing will be acquired on the date laid out in the schedule.
 
 ## October 16th - System UML Diagram
 The system UML diagram can be viewed [here](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/System%20UML%20Diagram.pdf)

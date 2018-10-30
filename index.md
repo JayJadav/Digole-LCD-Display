@@ -1,7 +1,23 @@
 # Digole-LCD-Display
 ### Implementing a Digole LCD Display with a Raspberry Pi
 
-## October 23r - Breadboarding
+## October 30th - PCB Design
+#### Fritzing Breadboard
+![FritzBreadBoard](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/Fritzing%20Breadboard.png)
+
+#### Fritzing Schematic
+![FritzSchematic](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/Fritzing%20Schematic.png)
+
+### Fritzing PCB
+![FritzPCB](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/Fritzing%20PCB.png)
+
+#### Schedule Update  
+I am on schedule as it is laid out [here](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/Capstone%20Gantt%20Schedule.mpp). The PCB Design has been completed and my Gerber files have been sent in for production.
+
+#### Budget Update  
+The budget has not been changed as of this date.
+
+## October 23rd - Breadboarding
 #### Below is a picture of the breadboard circuit set up with my screen powered on. 
 #### Connection: 
 - Pin01(3.3V) = VCC 

@@ -15,7 +15,7 @@
 I am on schedule as it is laid out [here](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/Capstone%20Gantt%20Schedule.mpp). The PCB Design has been completed and my Gerber files have been sent in for production.
 
 #### Budget Update  
-The budget has not been changed as of this date.
+The budget has not been changed as of this date. Budget can be viewed [here](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/Budget.xlsx).
 
 ## October 23rd - Breadboarding
 #### Below is a picture of the breadboard circuit set up with my screen powered on. 

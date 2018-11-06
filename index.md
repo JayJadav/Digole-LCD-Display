@@ -13,6 +13,12 @@ As I began soldering the vias together I noticed that I didn’t account for the
 ### Fritzing PCB
 ![FritzPCB](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/Fritzing%20PCB%20V2.png)
 
+### Soldering top of PCB V1
+![FritzPCB](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/Soldering%20Top.jpg)
+
+### Soldering Bottom of PCB V1
+![FritzPCB](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/Soldering%20Bottom.jpg)
+
 #### Schedule Update  
 As I was unable to complete the soldering task laid out in the [schedule](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/Capstone%20Gantt%20Schedule.mpp) by the end of this week's lab period I will now be completing it on my own time by the end of day on November 9th. This will keep me on track for next week when we will be deomstrating our sensors/effectors.
 

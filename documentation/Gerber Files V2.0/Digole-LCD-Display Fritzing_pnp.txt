@@ -1,0 +1,29 @@
+*Pick And Place List
+*Company=
+*Author=
+*eMail=
+*
+*Project=Digole-LCD-Display Fritzing
+*Date=12:41:55
+*CreatedBy=Fritzing 0.9.3b.04.19.5c895d327c44a3114e5fcc9d8260daf0cbb52806
+*
+*
+*Coordinates in mm, always center of component
+*Origin 0/0=Lower left corner of PCB
+*Rotation in degree (0-360, math. pos.)
+*
+*No;Value;Package;X;Y;Rotation;Side;Name
+1;;;20.702;-13.0316;0;Top;TXT2
+2;;;21.6272;-19.9979;0;Top;TXT2
+3;;;20.5354;-7.92171;0;Top;TXT2
+4;;;8.73225;-7.85864;0;Bottom;Via5
+5;;;8.73225;-12.9386;0;Bottom;Via2
+6;;SIP (Single Inline) [THT];16.3522;-11.6686;0;Bottom;Display
+7;;;3.65225;-18.0186;0;Bottom;Via4
+8;;;21.0883;-15.4824;0;Top;TXT2
+9;;;20.3158;-10.4419;0;Top;TXT2
+10;;;20.6257;-5.33207;0;Top;TXT2
+11;;;6.19225;-15.4786;0;Bottom;Via3
+12;;;37.7746;0.512289;0;Bottom;Raspberry Pi 1
+13;;;20.641;-17.9996;0;Top;TXT2
+14;;;10.5772;-1.45132;0;Top;TXT1

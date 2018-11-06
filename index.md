@@ -1,6 +1,24 @@
 # Digole-LCD-Display
 ### Implementing a Digole LCD Display with a Raspberry Pi
 
+## November 6th - PCB Design Update
+As I began soldering the vias together I noticed that I didn’t account for the GND pin not being placed adjacent to the CLK pin on the display. As such, I was required to move the ground connection on the PCB over one port on the PCB. Also, I reconfigured the total number of ports on the PCB to match the amount of pins that the display has. In other words I added a sixth port to account for the SS pin. The SS pin and the SDA pin will be left open. The files were sent to the Prototype Lab and the PCB should be constructed by the 8th.
+
+#### Fritzing Breadboard
+![FritzBreadBoard](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/Fritzing%20Breadboard%20V2.png)
+
+#### Fritzing Schematic
+![FritzSchematic](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/Fritzing%20Schematic%20V2.png)
+
+### Fritzing PCB
+![FritzPCB](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/Fritzing%20PCB%20V2.png)
+
+#### Schedule Update  
+As I was unable to complete the soldering task laid out in the [schedule](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/Capstone%20Gantt%20Schedule.mpp) by the end of this week's lab period I will now be completing it on my own time by the end of day on November 9th. This will keep me on track for next week when we will be deomstrating our sensors/effectors.
+
+#### Budget Update  
+The budget has not been changed as of this date. Budget can be viewed [here](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/Budget.xlsx).
+
 ## October 30th - PCB Design
 #### Fritzing Breadboard
 ![FritzBreadBoard](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/Fritzing%20Breadboard.png)

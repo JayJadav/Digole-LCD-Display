@@ -2,7 +2,21 @@
 ### Implementing a Digole LCD Display with a Raspberry Pi
 
 ## November 13th - PCB Completed and LCD Testing
-To be finished.
+This week I received my updated version 2 of the PCB now with the correct number of ports and connections. I soldered the vias together, and attached two pin headers for both the GPIO pins on the Pi and the 6 pins for my LCD screen. These headers are being used so the devices aren't permanently soldered to the board and PCB. Below are two images of the PCB after soldering (front and back).
+
+#### PCB Front
+![PCBFront](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/PCB%20Front%20-%20Finished.png)
+
+#### PCB Back
+![PCBBack](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/PCB%20Back%20-%20Finished.png)
+
+After solding and connecting both the PCB and the LCD to the Pi I was able to compile a [simple C script](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/Initial%20LCD%20Testing/digoleWrite.c) to read in a string from user from the terminal and write it to the LCD. The below images show the script running.
+
+#### Terminal Input
+![TerminalInput](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/Initial%20LCD%20Testing/Program%20Screenshot.png)
+
+#### LCD Output
+![TerminalOutput](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/Initial%20LCD%20Testing/LCD%20With%20Message.png)
 
 ## November 6th - PCB Design Update
 As I began soldering the vias together I noticed that I didn’t account for the GND pin not being placed adjacent to the CLK pin on the display. As such, I was required to move the ground connection on the PCB over one port. Also, I reconfigured the total number of ports on the PCB to match the amount of pins that the display has. In other words I added a sixth port to account for the SS pin. The SS pin and the SDA pin will be left open. The files were sent to the Prototype Lab and the PCB should be constructed by the 8th.

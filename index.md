@@ -10,13 +10,19 @@ This week I received my updated version 2 of the PCB now with the correct number
 #### PCB Back
 ![PCBBack](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/PCB%20Back%20-%20Finished.png)
 
-After solding and connecting both the PCB and the LCD to the Pi I was able to compile a [simple C script](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/Initial%20LCD%20Testing/digoleWrite.c) to read in a string from user from the terminal and write it to the LCD. The below images show the script running.
+After solding and connecting both the PCB and the LCD to the Pi I was able to compile a [simple C script](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/Initial%20LCD%20Testing/digoleWrite.c) to read in a string from the terminal and write it to the LCD. The below images show the script running.
 
 #### Terminal Input
 ![TerminalInput](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/Initial%20LCD%20Testing/Program%20Screenshot.png)
 
 #### LCD Output
 ![TerminalOutput](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/Initial%20LCD%20Testing/LCD%20With%20Message.png)
+
+#### Schedule Update  
+After having to make up the time lost redesigning and soldering a new PCB I have returned to the proper place in the [schedule](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/Capstone%20Gantt%20Schedule.mpp) and remain on track to complete this project by December 11th. 
+
+#### Budget Update  
+The [budget](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/Budget.xlsx) has not been changed as of this date.
 
 ## November 6th - PCB Design Update
 As I began soldering the vias together I noticed that I didn’t account for the GND pin not being placed adjacent to the CLK pin on the display. As such, I was required to move the ground connection on the PCB over one port. Also, I reconfigured the total number of ports on the PCB to match the amount of pins that the display has. In other words I added a sixth port to account for the SS pin. The SS pin and the SDA pin will be left open. The files were sent to the Prototype Lab and the PCB should be constructed by the 8th.

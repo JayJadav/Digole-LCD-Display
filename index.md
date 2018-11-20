@@ -5,7 +5,6 @@
 This week I received my updated version 2 of the PCB now with the correct number of ports and connections. I soldered the vias together, and attached two pin headers for both the GPIO pins on the Pi and the 6 pins for my LCD screen. These headers are being used so the devices aren't permanently soldered to the board and PCB. Below are two images of the PCB after soldering (front and back).
 
 #### PCB Front
-<img src="Digole-LCD-Display/documentation/PCB Front - Finished.png" class="img-responsive" alt="">
 ![PCBFront](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/PCB%20Front%20-%20Finished.png)
 
 #### PCB Back

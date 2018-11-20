@@ -1,6 +1,18 @@
 # Digole-LCD-Display
 ### Implementing a Digole LCD Display with a Raspberry Pi
 
+## November 20th - Raspberry Pi Case
+
+#### Acrylic Case
+The schematic can be found [here](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/RPI%20Case%20Schem.cdr).
+TODO: Add a picture of the schematic.
+
+#### Schedule Update  
+The [schedule](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/Capstone%20Gantt%20Schedule.mpp) has been followed accordingly for this week. I was able to succesfuly design and send in my schematic to the prototype lab for cutting. 
+
+#### Budget Update  
+The [budget](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/Budget.xlsx) has not been changed as of this date.
+
 ## November 13th - PCB Completed and LCD Testing
 This week I received my updated version 2 of the PCB now with the correct number of ports and connections. I soldered the vias together, and attached two pin headers for both the GPIO pins on the Pi and the 6 pins for my LCD screen. These headers are being used so the devices aren't permanently soldered to the board and PCB. Below are two images of the PCB after soldering (front and back).
 

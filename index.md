@@ -8,15 +8,15 @@ This week I received my updated version 2 of the PCB now with the correct number
 ![PCBFront](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/PCB%20Front%20-%20Finished.png)
 
 #### PCB Back
-![PCBBack](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/PCB%20Back%20-%20Finished.png)
+![PCBBack](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/PCB%20Back%20-%20Finished.png)
 
 After solding and connecting both the PCB and the LCD to the Pi I was able to compile a [simple C script](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/Initial%20LCD%20Testing/digoleWrite.c) to read in a string from the terminal and write it to the LCD. The below images show the script running.
 
 #### Terminal Input
-![TerminalInput](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/Initial%20LCD%20Testing/Program%20Screenshot.png)
+![TerminalInput](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/Initial%20LCD%20Testing/Program%20Screenshot.png)
 
 #### LCD Output
-![TerminalOutput](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/Initial%20LCD%20Testing/LCD%20With%20Message.png)
+![TerminalOutput](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/Initial%20LCD%20Testing/LCD%20With%20Message.png)
 
 #### Schedule Update  
 After having to make up the time lost redesigning and soldering a new PCB I have returned to the proper place in the [schedule](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/Capstone%20Gantt%20Schedule.mpp) and remain on track to complete this project by December 11th. 
@@ -37,10 +37,10 @@ As I began soldering the vias together I noticed that I didn’t account for the
 ![FritzPCB](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/Fritzing%20PCB%20V2.png)
 
 ### Soldering top of PCB V1
-![FritzPCB](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/Soldering%20Top.jpg)
+![FritzPCB](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/Soldering%20Top.jpg)
 
 ### Soldering Bottom of PCB V1
-![FritzPCB](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/Soldering%20Bottom.jpg)
+![FritzPCB](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/Soldering%20Bottom.jpg)
 
 #### Schedule Update  
 As I was unable to complete the soldering task laid out in the [schedule](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/Capstone%20Gantt%20Schedule.mpp) by the end of this week's lab period I will now be completing it on my own time by the end of day on November 9th. This will keep me on track for next week when we will be deomstrating our sensors/effectors.
@@ -72,11 +72,11 @@ The budget has not been changed as of this date. Budget can be viewed [here](htt
 - Pin05(BCM 3 Clock) = CLK 
 - Pin06(Ground) = GND
 
-![Breadboarding](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/breadboard.jpg)
+![Breadboarding](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/breadboard.jpg)
 
 #### Below shows that my Raspberry Pi does indeed see my Digole Display on my correct address of 0x27
 
-![I2cdetect](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/i2cdetect.jpg)
+![I2cdetect](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/i2cdetect.jpg)
 
 Initially I ran in to an issue of connecting to the wrong ground and power pins on my Pi. I switched from 5V to 3v3 and adjusted the ground so it was on a closer pin. 
 

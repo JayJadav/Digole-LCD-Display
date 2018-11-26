@@ -4,11 +4,18 @@
 ## November 20th - Raspberry Pi Case
 
 #### Acrylic Case
-The schematic can be found [here](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/RPI%20Case%20Schem.cdr).
-TODO: Add a picture of the schematic.
+The schematic can be found [here](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/RPI%20Case%20Schem.cdr). 
+
+#### 2D Case Render
+![2DCase]()
+
+After getting my case laser cut, some glaring problems were observed. While I had resized the sides/top/bottom to accommodate the addition of the LCD display, I had neglected to take in to account that the indiavidual slots on each peice would be moved as well. As a result, each piece did not fit together and the case could not be constructed. Below is a picture of my second option, that being to use the original case the Raspberry Pi came with and attach the screen to the top. In the future a cover will be added to the top of the device in order to protect the electronic components inside.  
+
+#### Pi with LCD
+![PiandLCD](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/Working%20Prototype.png)
 
 #### Schedule Update  
-The [schedule](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/Capstone%20Gantt%20Schedule.mpp) has been followed accordingly for this week. I was able to succesfuly design and send in my schematic to the prototype lab for cutting. 
+The [schedule](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/Capstone%20Gantt%20Schedule.mpp) has been followed accordingly for this week. I was able to succesfuly design and send in my schematic to the prototype lab for cutting. After having to use my backup plan for the case, I was able to remain on schedule.
 
 #### Budget Update  
 The [budget](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/Budget.xlsx) has not been changed as of this date.

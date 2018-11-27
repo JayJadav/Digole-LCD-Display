@@ -7,7 +7,7 @@
 The schematic can be found [here](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/RPI%20Case%20Schem.cdr). 
 
 #### 2D Case Render
-![2DCase]()
+![2DCase](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/RPI%20Case%20Schem.pdf)
 
 After getting my case laser cut, some glaring problems were observed. While I had resized the sides/top/bottom to accommodate the addition of the LCD display, I had neglected to take in to account that the indiavidual slots on each peice would be moved as well. As a result, each piece did not fit together and the case could not be constructed. Below is a picture of my second option, that being to use the original case the Raspberry Pi came with and attach the screen to the top. In the future a cover will be added to the top of the device in order to protect the electronic components inside.  
 

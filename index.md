@@ -1,13 +1,22 @@
 # Digole-LCD-Display
 ### Implementing a Digole LCD Display with a Raspberry Pi
 
+## November 27th - Presentation
+Today, the project is presented to the class. The Power Point can be found [here](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/Presentation.pptx).
+
+#### Schedule Update  
+The [schedule](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/Capstone%20Gantt%20Schedule.mpp) has been followed accordingly for this week. I have finished the presentation on time and am on track to complete my build instructions by the end of the term.
+
+#### Budget Update  
+The [budget](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/Budget.xlsx) has been updated to reflect the final changes of each indavidual item being acquired.
+
 ## November 20th - Raspberry Pi Case
 
 #### Acrylic Case
 The schematic can be found [here](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/RPI%20Case%20Schem.cdr). 
 
 #### 2D Case Render
-![2DCase](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/RPI%20Case%20Schem.pdf)
+![2DCase](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/Case%20Schem.PNG)
 
 After getting my case laser cut, some glaring problems were observed. While I had resized the sides/top/bottom to accommodate the addition of the LCD display, I had neglected to take in to account that the indiavidual slots on each peice would be moved as well. As a result, each piece did not fit together and the case could not be constructed. Below is a picture of my second option, that being to use the original case the Raspberry Pi came with and attach the screen to the top. In the future a cover will be added to the top of the device in order to protect the electronic components inside.  
 

@@ -24,6 +24,9 @@ the builder to interfacing a Pi with an LCD screen. This allows the builder to u
 
 ![FinishedProduct](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/Working%20Prototype.png)
 
+#### Helpful skills to have before beginning:
+1. 
+
 A weekly updated blog for the fall semester of 2018 for this project as it was designed and implemented can be viewed [here](https://jacobladan.github.io/Digole-LCD-Display/).
 <br />
 
@@ -162,3 +165,8 @@ To run the program issue ```./digoleWrite``` from within the same directory as b
 
 #### LCD Output
 ![LCDOutput](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/Initial%20LCD%20Testing/LCD%20With%20Message.png)
+<br />
+
+## Resources
+-
+-

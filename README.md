@@ -13,17 +13,19 @@ The following image depicts the overall goal of the hardware project for the thi
 program at Humber College. This includes two other projects that are to be implemented at a later date, as well as a communication with 
 a remotely hosted database. 
 
----Overall System UML---
+![SystemUML](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/system_uml_pi_only.PNG)
 
 For the purpose of these build instructions and what will be focused on, the following image depicts an initial version to introduce 
-the builder to interfacing a Pi with an LCD screen. This allows the builder to use what has been produced through this project and apply
-it how they see fit. 
+the builder to interfacing a Pi with an LCD screen. This allows the builder to use what has been produced through these instructions and apply it how they see fit. 
 
----Build Instructions System---
+![BISystemUML](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/build_instructions_system.png)
 
 #### The finished product, and what will be achieved through following these instructions.
 
 ![FinishedProduct](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/Working%20Prototype.png)
+
+#### Helpful skills to have before beginning:
+1. 
 
 A weekly updated blog for the fall semester of 2018 for this project as it was designed and implemented can be viewed [here](https://jacobladan.github.io/Digole-LCD-Display/).
 <br />
@@ -33,22 +35,24 @@ A full list of materials along with a detailed view of costs can be downloaded f
 The total cost of producing this project is heavily inflated due to the cost of the soldering kit that was supplied in the lab during
 development. Any generic solding iron can be used for this project.
 
+The total cost after removing the soldering kit is: **$398.27 CAD** after HST. This includes all the tools used in completing the project (eg. wirecutters, needlenose pliers, breadboard, etc.)
+
 Notable purchases include: Raspberry Pi 3B+ Kit ($94.95 CAD) and Digole 2.4" LCD display with touch capabilities ($17.49 USD).
 <br />
 
 ## Time Commitment
-A detailed view of the scheduled followed this semster can be downloaded from within this repository [here](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/Capstone%20Gantt%20Schedule.mpp). 
+A detailed view of the schedule followed this semster can be downloaded from within this repository [here](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/Capstone%20Gantt%20Schedule.mpp). 
 This schedule uses a weekly breakdown that follows the CENG 317 class schedule for the fall semester of 2018. This project could be completed in a more compact time frame if the builder so chooses. The schedule is helpful in outlining the overall flow and the order in which each milestone for the project is completed. Orignally the project was completed over a 15 week semester, however it could more reasonably be completed in 1-2 week(s) dependant on how many of the materials the builder already possesses, access to the facilities necessary in producing the PCB, and shipping times. 
 <br />
 
 ## Mechanical Assembly
-Firstly, in order for the Digole LCD to use I2C, one modification must be made to the screen's logic board. The builder must solder a  short between the middle and the I2C adapters as outlined in the image below.
+Firstly, in order for the Digole LCD to use I2C communication with the Pi, one modification must be made to the screen's logic board. The builder must solder a  short between the middle and the I2C adapters as outlined in the image below.
 
----i2c short---
+![I2CShort](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/i2c_short.PNG)
 
 Next, the following connection scheme will be used in order to connect the Digole LCD to the Raspberry Pi's GPIO pins. 
 
----i2c scheme---
+![I2CConnection](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/i2c_connection_scheme.PNG)
 
 The LCD will be connected to a breadboard, and the following connections will be made from the board to the GPIO pins on the Pi. With GPIO on the left and the coorisponding LCD connections on the right. The SS and SDO pins on the LCD will be left open:
 - Pin01(3.3V) --> VCC 
@@ -60,9 +64,9 @@ As a result the builder will now have produced something similar to the construc
 
 ![BreadboardConection](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/breadboard.jpg)
 
-Note: A 6 pin header has been soldered to the LCD's connectors in order to allow it to attach properly to the breadboard. 
+Note: A 6 pin header has been soldered to the LCD's connectors in order to allow it to attach properly to the breadboard and later the PCB. 
 
-With the Pi powered on, and I2C communications enabled the LCD will power on and display it's factory default message indicating that proper power and ground has been supplied and the divice is in working order. 
+With the Pi powered on, and I2C communications enabled, the LCD will power on and display its factory default message indicating that proper power has been supplied, ground has been connected, and the LCD is in working order. 
 
 Next, to ensure the LCD has been connected properly for I2C communications, the following command should be entered in to the Pi's terminal: ```sudo i2cdetect -y 1```. This will display a simple graphic listing each device connected to the I2C bus and it's corrisponding address. The address the LCD uses is 0x27.
 
@@ -74,7 +78,7 @@ The following PCB was designed and used for this project. The Gerber files for t
 
 ![FritzingPCB](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/Fritzing%20PCB%20V2.png)
 
-To construct the PCB, the prototype lab located at Humber College was used. However, any third party production facility may be used as the files are universally accepted as an industry standard. The two images below show the PCB constructed from both the top and bottom. A 6 pin header has been soldered to the top of the PCB to connect to the LCD and a 40 pin header has been soldered to the bottom to connect to the GPIO pins on the Pi.
+To construct the PCB, the prototype lab located at Humber College was used. However, any third party production facility may be used, as the files are universally accepted as an industry standard. The two images below show the PCB constructed from both the top and bottom. A 6 pin header has been soldered to the top of the PCB to connect to the LCD and a 40 pin header has been soldered to the bottom to connect to the GPIO pins on the Pi.
 
 #### PCB - Top
 ![PCBTop](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/PCB%20Front%20-%20Finished.png)
@@ -150,14 +154,19 @@ int main(void) {
 10. Program exits
 
 #### Compiling
-To compile the program using the gcc C compiler issue ```gcc digoleWrite.c -o digoleWrite``` in the terminal, making sure to be located in the same directory as digoleWrite.c. This command compiles the program and creates an executable to be used to run the program.  
+To compile the program using the gcc C compiler issue ```gcc digoleWrite.c -o digoleWrite``` in the terminal, making sure to be operating in the same directory as digoleWrite.c. This command compiles the program and creates an executable to be used to run the program.  
 <br />
 
 ## Testing
-To run the program issue ```./digoleWrite``` fromn within the same directory as before when compiling and the program should start. The builder should then observe the LCD clear its default message and be able to write their own messages to the screen using the program on the Pi running within its terminal. Below are two images depicting the program in action. One from the Pi's terminal, where the user enters the message to be written to the LCD, and a second displaying the message on the LCD. 
+To run the program issue ```./digoleWrite``` from within the same directory as before when compiling and the program should start. The builder should then observe the LCD clear its default message and be able to write their own messages to the screen using the program on the Pi running within its terminal. Below are two images depicting the program in action. One from the Pi's terminal, where the user enters the message to be written to the LCD, and a second displaying the message on the LCD. 
 
 #### User Input
 ![TerminalINput](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/Initial%20LCD%20Testing/Program%20Screenshot.png)
 
 #### LCD Output
 ![LCDOutput](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/Initial%20LCD%20Testing/LCD%20With%20Message.png)
+<br />
+
+## Resources
+-
+-

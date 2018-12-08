@@ -48,7 +48,7 @@ This schedule uses a weekly breakdown that follows the CENG 317 class schedule f
 ## Mechanical Assembly
 Firstly, in order for the Digole LCD to use I2C communication with the Pi, one modification must be made to the screen's logic board. The builder must solder a  short between the middle and the I2C adapters as outlined in the image below.
 
-![I2CShort](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/i2c_short.PNG)
+![I2CShort](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/i2c_short%20_outlined.PNG)
 
 Next, the following connection scheme will be used in order to connect the Digole LCD to the Raspberry Pi's GPIO pins. 
 

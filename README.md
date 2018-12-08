@@ -70,6 +70,17 @@ Next, to ensure the LCD has been connected properly for I2C communications, the 
 <br />
 
 ## PCB and Soldering
+The following PCB was designed and used for this project. The Gerber files for the PCB can be found from within this repository [here](https://github.com/jacobladan/Digole-LCD-Display/tree/master/documentation/Gerber%20Files%20V2.0). Included in these files is a save for the application **Fritzing** which was used to produce this design. This file can be opened and used by the same program to add any modifications to the board as the builder should see fit. Such as, their own name and a description. 
+
+![FritzingPCB](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/Fritzing%20PCB%20V2.png)
+
+To construct the PCB, the prototype lab located at Humber College was used. However, any third party production facility may be used as the files are universally accepted as an industry standard. The two images below show the PCB constructed from both the top and bottom. A 6 pin header has been soldered to the top of the PCB to connect to the LCD and a 40 pin header has been soldered to the bottom to connect to the GPIO pins on the Pi.
+
+#### PCB - Top
+![PCBTop](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/PCB%20Front%20-%20Finished.png)
+
+#### PCB - Bottom
+![PCBBottom](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/PCB%20Back%20-%20Finished.png)
 
 <br />
 

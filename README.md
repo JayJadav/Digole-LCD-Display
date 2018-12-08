@@ -13,13 +13,13 @@ The following image depicts the overall goal of the hardware project for the thi
 program at Humber College. This includes two other projects that are to be implemented at a later date, as well as a communication with 
 a remotely hosted database. 
 
----Overall System UML---
+![SystemUML](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/system_uml_pi_only.PNG)
 
 For the purpose of these build instructions and what will be focused on, the following image depicts an initial version to introduce 
 the builder to interfacing a Pi with an LCD screen. This allows the builder to use what has been produced through this project and apply
 it how they see fit. 
 
----Build Instructions System---
+![BISystemUML](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/build_instructions_system.png)
 
 #### The finished product, and what will be achieved through following these instructions.
 
@@ -44,11 +44,11 @@ This schedule uses a weekly breakdown that follows the CENG 317 class schedule f
 ## Mechanical Assembly
 Firstly, in order for the Digole LCD to use I2C, one modification must be made to the screen's logic board. The builder must solder a  short between the middle and the I2C adapters as outlined in the image below.
 
----i2c short---
+![I2CShort](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/i2c_short.PNG)
 
 Next, the following connection scheme will be used in order to connect the Digole LCD to the Raspberry Pi's GPIO pins. 
 
----i2c scheme---
+![I2CConnection](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/i2c_connection_scheme.PNG)
 
 The LCD will be connected to a breadboard, and the following connections will be made from the board to the GPIO pins on the Pi. With GPIO on the left and the coorisponding LCD connections on the right. The SS and SDO pins on the LCD will be left open:
 - Pin01(3.3V) --> VCC 

@@ -148,8 +148,16 @@ int main(void) {
 8. Text write mode is left by issuing ```"0"``` 
 9. Finally, when the user is finished with the program and enteres ```-1```, the program clears the screen with ```"CL"``` and then closes the I2C driver file
 10. Program exits
+
+#### Compiling
+To compile the program using the gcc C compiler issue ```gcc digoleWrite.c -o digoleWrite``` in the terminal, making sure to be located in the same directory as digoleWrite.c. This command compiles the program and creates an executable to be used to run the program.  
 <br />
 
-## Production Testing
+## Testing
+To run the program issue ```./digoleWrite``` fromn within the same directory as before when compiling and the program should start. The builder should then observe the LCD clear its default message and be able to write their own messages to the screen using the program on the Pi running within its terminal. Below are two images depicting the program in action. One from the Pi's terminal, where the user enters the message to be written to the LCD, and a second displaying the message on the LCD. 
 
+#### User Input
+![TerminalINput](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/Initial%20LCD%20Testing/Program%20Screenshot.png)
 
+#### LCD Output
+![LCDOutput](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/Initial%20LCD%20Testing/LCD%20With%20Message.png)

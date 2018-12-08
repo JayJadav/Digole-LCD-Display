@@ -85,11 +85,71 @@ To construct the PCB, the prototype lab located at Humber College was used. Howe
 <br />
 
 ## Powering Up Device
-
+At this point in the project, the PCB will now be connected to the Pi and the LCD will then be connected to the PCB. What the builder will have is a product resembling the end result, as depicted in the introduction of these instructions. The builder must ensure that the connections have been made properly by powering up the Pi and ensuring the screen receives power by lighting up and displaying its default message as it did in the mechanical assembly section of these instructions. Again, on the Pi enter the following command in the Pi's terminal to ensure the proper connections have been made for I2C communication: ```sudo i2cdetect -y 1```
 <br />
 
-## Unit Testing
+## The Software
+The C program in its entirety can be downloaded from within this repository [here](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/Initial%20LCD%20Testing/digoleWrite.c). Below is the source code for the program:
 
+```
+#include <unistd.h>
+#include <stdio.h>
+#include <fcntl.h>
+#include <sys/ioctl.h>
+#include <linux/i2c-dev.h>
+#include <string.h>
+
+int main(void) {
+	int file_i2c;
+	int addr = 0x27;
+	char *filename = (char*) "/dev/i2c-1";
+	char message[100] = "Hello, World!";
+
+	printf("\nStarting connection with Digole LCD...\n");
+	// Opening I2C bus connection
+	if ((file_i2c = open(filename, O_RDWR)) < 0) {
+		printf("\nFailed to open I2C bus.");
+		return -1;
+	}
+	// Setting LCD address communication
+	if (ioctl(file_i2c, I2C_SLAVE, addr) < 0) {
+		printf("\nFailed to communicate with slave");
+		return -1;
+	}
+	// Main loop - Asking for message with stdin and displaying it on LCD
+	while(strncmp(message, "-1", 2) != 0) {
+		printf("Enter a message (max 100char) or -1 to quit: ");
+		fflush(stdout);
+		fgets(message, sizeof(message), stdin);
+		// Clearing the LCD and setting the cursor on
+		write(file_i2c, "CL", 2);
+		write(file_i2c, "CS1", 3);
+		// Entering text write mode. Writing the message. Closing write mode
+		write(file_i2c, "TT", 2);
+		write(file_i2c, message, sizeof(message));
+		write(file_i2c, "0", 1);
+	}
+	// Clearing the screen and closing I2C file
+	write(file_i2c, "CL", 2);
+	close(file_i2c);
+
+	return 0;
+}
+```
+
+#### Program Explaination
+1. The program connects to the I2C interface by opeining a file descriptor with read and write permissions that defines the driver for I2C communications on the Pi
+2. The address for communicating with the LCD is defined by using ```ioctl()``` passing the file descriptor for the driver, the definition that the device is an I2C slave, and the address for the device being ```0x27``` as perameters
+3. The program is entered in to a loop asking the user for a message or if they would like to exit by entering ```-1```
+4. ```message``` is assigned the value of the string the user has input to the terminal, and will be used when writing to the LCD
+5. ```write()``` is used to issue commands to the LCD by writing text to the I2C driver that was opened previously. ```"CL"``` is the command used to clear all the pixels and ```"CS1"``` is used to set the cursor position to the top left corner of the LCD
+6. Text write mode must be entered for the LCD so that it knows to interpret the next command as to be what will be written to the screen. ```"TT"``` is used to do so
+7. The ```message``` is then written to the LCD
+8. Text write mode is left by issuing ```"0"``` 
+9. Finally, when the user is finished with the program and enteres ```-1```, the program clears the screen with ```"CL"``` and then closes the I2C driver file
+10. Program exits
 <br />
 
 ## Production Testing
+
+

@@ -1,6 +1,9 @@
 # Digole-LCD-Display
 ### Implementing a Digole LCD Display with a Raspberry Pi
 
+## December 11th - Build Instructions
+The build instructions have been completed and can be viewed [here](https://github.com/jacobladan/Digole-LCD-Display/blob/master/README.md) or at the root of this repository. The project for this semester has now been completed on time and within budget.
+
 ## November 27th - Presentation
 Today, the project is presented to the class. The Power Point can be found [here](https://github.com/jacobladan/Digole-LCD-Display/blob/master/documentation/Presentation.pptx).
 

@@ -2,6 +2,10 @@
 #### By Jacob Ladan • For Hardware Production Technology CENG 317, Humber College School of Applied Technology
 <br />
 
+## Table of Contents
+- [Introduction](#introduction)
+<br />
+
 ## Introduction
 As a result of following these build instructions, the builder will be able to implement a Digole LCD screen with a Raspberry Pi 3B+.
 These build instructions will aid the builder in producing a unified product, along with the necessary code to drive these devices. 
@@ -24,7 +28,7 @@ the builder to interfacing a Pi with an LCD screen. This allows the builder to u
 
 ![FinishedProduct](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/Working%20Prototype.png)
 
-#### Helpful skills a builder s hould have before beginning:
+#### Helpful skills a builder should have before beginning:
 - Familiarity with a linux shell environment for navigating the Raspberry Pi console
 - Breadboarding
 - Soldering
@@ -81,7 +85,7 @@ The following PCB was designed and used for this project. The Gerber files for t
 
 ![FritzingPCB](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/Fritzing%20PCB%20V2.png)
 
-To construct the PCB, the prototype lab located at Humber College was used. However, any third party production facility may be used, as the files are universally accepted as an industry standard. The two images below show the PCB constructed from both the top and bottom. A 6 pin header has been soldered to the top of the PCB to connect to the LCD and a 40 pin header has been soldered to the bottom to connect to the GPIO pins on the Pi.
+To construct the PCB, the prototype lab located at Humber College was used. However, any third party production facility may be used, as the files are universally accepted as an industry standard. The two images below show the PCB constructed from both the top and bottom. A 6 pin header has been soldered to the top of the PCB to connect to the LCD and a 40 pin header has been soldered to the bottom to connect to the GPIO pins on the Pi. Additionally, the vias (holes connecting top and bottom) have been connected by soldering a small piece of conductor through them.
 
 #### PCB - Top
 ![PCBTop](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/PCB%20Front%20-%20Finished.png)
@@ -146,8 +150,8 @@ int main(void) {
 
 #### Program Explaination
 1. The program connects to the I2C interface by opeining a file descriptor with read and write permissions that defines the driver for I2C communications on the Pi
-2. The address for communicating with the LCD is defined by using ```ioctl()``` passing the file descriptor for the driver, the definition that the device is an I2C slave, and the address for the device being ```0x27``` as perameters
-3. The program is entered in to a loop asking the user for a message or if they would like to exit by entering ```-1```
+2. The address for communicating with the LCD is defined by using ```ioctl()``` passing the file descriptor for the driver, the definition stating that the device is an I2C slave, and the address for the device being ```0x27``` as perameters
+3. The program is entered in to a loop prompting the user for a message or if they would like to exit by entering ```-1```
 4. ```message``` is assigned the value of the string the user has input to the terminal, and will be used when writing to the LCD
 5. ```write()``` is used to issue commands to the LCD by writing text to the I2C driver that was opened previously. ```"CL"``` is the command used to clear all the pixels and ```"CS1"``` is used to set the cursor position to the top left corner of the LCD
 6. Text write mode must be entered for the LCD so that it knows to interpret the next command as to be what will be written to the screen. ```"TT"``` is used to do so
@@ -168,6 +172,14 @@ To run the program issue ```./digoleWrite``` from within the same directory as b
 
 #### LCD Output
 ![LCDOutput](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/Initial%20LCD%20Testing/LCD%20With%20Message.png)
+<br />
+
+## Finished Product
+To complete this project, the Pi will be placed back in to the case that was purchased along side it. Making sure to remove the PCB from the pi before attempting to place the Pi in the case to avoid damage. The final product, if all the instructions were followed correctly, will be presented as such.
+
+![FinishedProduct](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/Working%20Prototype.png)
+
+For additional screen support, an electronics safe foam was placed in between the case and the LCD. 
 <br />
 
 ## Resources

@@ -4,7 +4,17 @@
 
 ## Table of Contents
 - [Introduction](#introduction)
+- [Build Materials and Budget](#build-materials-and-budget)
+- [Time Commitment](#time-commitment)
+- [Mechanical Assembly](#mechanical-assembly)
+- [PCB and Soldering](#pcb-and-soldering)
+- [Powering Up Device](#powering-up-device)
+- [The Software](#the-software)
+- [Testing](#testing)
+- [Finished Product](#finished-product)
+
 <br />
+
 
 ## Introduction
 As a result of following these build instructions, the builder will be able to implement a Digole LCD screen with a Raspberry Pi 3B+.

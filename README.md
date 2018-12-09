@@ -24,8 +24,11 @@ the builder to interfacing a Pi with an LCD screen. This allows the builder to u
 
 ![FinishedProduct](https://raw.githubusercontent.com/jacobladan/Digole-LCD-Display/master/documentation/Working%20Prototype.png)
 
-#### Helpful skills to have before beginning:
-1. 
+#### Helpful skills a builder s hould have before beginning:
+- Familiarity with a linux shell environment for navigating the Raspberry Pi console
+- Breadboarding
+- Soldering
+- Some knowledge of programming (C is most helpful)
 
 A weekly updated blog for the fall semester of 2018 for this project as it was designed and implemented can be viewed [here](https://jacobladan.github.io/Digole-LCD-Display/).
 <br />
@@ -168,5 +171,9 @@ To run the program issue ```./digoleWrite``` from within the same directory as b
 <br />
 
 ## Resources
--
--
+- [Raspberry Pi Projects](http://raspberry-projects.com/pi/programming-in-c/i2c/using-the-i2c-interface)
+- [Synthiam](https://synthiam.com/Tutorial/Digole-Digital-Solutions-Lcd-Displays-16344)
+- Digole Digital Solutions [Programmer Manual](http://www.digole.com/images/file/Tech_Data/Digole_Serial_Display_Adapter-Manual.pdf)
+- [Fritzing](http://fritzing.org/home/)
+- Raspberry Pi OS [Raspbian](https://www.raspberrypi.org/downloads/raspbian/)
+- Diagrams [draw.io](https://www.draw.io/)

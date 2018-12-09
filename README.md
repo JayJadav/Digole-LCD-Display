@@ -12,7 +12,7 @@
 - [The Software](#the-software)
 - [Testing](#testing)
 - [Finished Product](#finished-product)
-
+- [Resources](#resources)
 <br />
 
 
